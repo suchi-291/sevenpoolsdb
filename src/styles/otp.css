@@ -1,0 +1,427 @@
+.otp-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    background-color: #040117aa;
+  }
+
+  
+  
+  .otp-page-wrap {
+    position: relative;
+    z-index: 999;
+    width: 85%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+                0px 1px 3px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    animation: neonGlow 5s infinite alternate; /* Apply animation */
+}
+
+/* Neon glow animation with custom colors */
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 4px rgba(38, 30, 89, 0.6), /* #261E59 */
+                    0 0 8px rgba(7, 34, 115, 0.4), /* #072273 */
+                    0 0 12px rgba(27, 87, 140, 0.3); /* #1B578C */
+    }
+    50% {
+        box-shadow: 0 0 8px rgba(7, 34, 115, 0.8), /* #072273 */
+                    0 0 12px rgba(27, 87, 140, 0.6), /* #1B578C */
+                    0 0 16px rgba(217, 50, 158, 0.4); /* #D9329E */
+    }
+    100% {
+        box-shadow: 0 0 12px rgba(38, 30, 89, 1), /* #261E59 */
+                    0 0 16px rgba(7, 34, 115, 0.8), /* #072273 */
+                    0 0 20px rgba(217, 50, 158, 0.6); /* #D9329E */
+    }
+}
+
+.otp-form-wrap {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1rem;
+}
+
+
+
+.otp-welcome {
+    color: #261E59;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+
+
+.otp-h2-decor {
+    font-weight: 800;
+}
+
+.otp-text {
+    color: #2d1940;
+    font-size: 18px;
+    padding-left: 0.2rem;
+    font-weight: 400;
+}
+
+
+.otp-logo-wrap {
+    padding: 1rem 2rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.otp-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.otp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.otp-input {
+    border: none;
+    border-bottom: 0.1px solid #2d1940;
+    padding-bottom: 0.5rem;
+    font-weight: 200;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.otp-input:focus {
+    border: none;
+    border-bottom: 2px solid #53268d;
+    outline: none;
+    font-size: 14.1px;
+}
+
+
+.otp-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2d1940;
+
+}
+
+
+.otp-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.otp-links-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.otp-forgot-link {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2d1940;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.otp-forgot-link:hover {
+    color: #890590;
+    font-size: 14.1px;
+}
+
+.otp-btn {
+    border: none;
+    background-color: #471069;
+    color: white;
+    border-radius: 0.8rem;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 0 1.2rem;
+    height: 1.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.otp-btn:hover {
+    font-size: 14.1px;
+    background-color: #14598d;
+    transform: scale(1.05);
+}
+
+.otp-img-wrap {
+    width: 40%;
+    position: relative;
+  
+}
+
+.otp-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: absolute;
+    right: 0;
+}
+
+.otp-form-content-wrap{
+    padding-left: 2rem;
+}
+
+
+/************** Large Devices start ******************/
+@media (min-width: 1181px) and (max-width: 1444px) {
+
+.otp-form-wrap {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1rem;
+}
+
+.otp-img-wrap {
+    width: 45%;
+    position: relative;
+  
+}
+
+
+}
+
+/************** Large Devices End ******************/
+
+
+/********** Medium Devices Start ***************/
+@media (min-width: 601px) and (max-width: 1180px) and (orientation: portrait) {
+
+    .otp-page {
+        width: 100vw;
+        height: 100vh;
+        background: url(../assets/loginbgfull.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .otp-page-wrap {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+            0px 1px 3px rgba(0, 0, 0, 0.06);
+        z-index: 9999;
+        background-color: white;
+        border-radius: 2rem;
+
+    }
+
+    .otp-form-wrap {
+        width: 100%;
+        height: 100%;
+        gap: 5rem;
+    }
+
+
+
+
+    .otp-form-content-wrap {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .otp-img-wrap {
+        display: none;
+    }
+    
+    .otp-bg-img {
+        display: none;    
+    }
+
+    
+
+    
+
+
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1180px) and (orientation: landscape) {
+
+    .otp-page {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/loginbgfull.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: "Inter", sans-serif;
+    }
+
+    .otp-page-wrap {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+            0px 1px 3px rgba(0, 0, 0, 0.06);
+        z-index: 9999;
+        background-color: white;
+    
+    }
+
+
+.otp-form-wrap {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+    .otp-img-wrap {
+        display: none;
+    }
+
+    .otp-form-content-wrap {
+        padding: 2rem;
+    }
+
+
+}
+
+
+
+
+/********** Medium Devices End ***************/
+
+
+/********** Small Devices Start ***************/
+
+
+@media (max-width: 600px) and (orientation: portrait){
+
+
+    .otp-page{
+        width: 100vw;
+        height: 100vh;
+        background: url(../assets/loginbgfull.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .otp-page-wrap {
+        width: 75%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+            0px 1px 3px rgba(0, 0, 0, 0.06);
+        z-index: 9999;
+        background-color: white;
+        border-radius: 2rem;
+        padding: 1rem;
+
+    }
+
+    .otp-form-wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .otp-img-wrap {
+        display: none;
+    }
+
+    .otp-form-content-wrap {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .otp-logo-wrap {
+        padding: 0rem 1rem;
+        width: 2rem;
+        height: 2rem;
+    
+    }
+
+    .otp-welcome {
+        color: #261E59;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    
+    }
+
+
+.otp-form-content-wrap {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+
+}
+
+/********** Small Devices End ***************/
+
+

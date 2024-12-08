@@ -1,0 +1,1457 @@
+/****************************************** PARENT WRAPPER FOR APP START ***************************************************/
+
+.db-main.light {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Urbanist", sans-serif;
+}
+
+.db-main.dark {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #01061d;
+  box-sizing: border-box;
+  margin: 0;
+  overflow: auto;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Urbanist", sans-serif;
+}
+
+
+/******************************************** PARENT WRAPPER FOR APP END **********************************************************/
+
+/************************************************ DASHBOARD START *****************************************************************/
+
+/************************************************** NAVBAR START *******************************************************************/
+
+
+
+
+.db-nav.light {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  background-color: white;
+  color: #34475A;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+    0px 1px 3px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.db-nav.dark {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #0d1227;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+    0px 1px 3px rgba(0, 0, 0, 0.06);
+  align-items: center;
+
+}
+
+.db-left-nav {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+
+}
+
+.db-left-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.db-left-nav ul li {
+  list-style: none;
+}
+
+.db-nav-link.light {
+  text-decoration: none;
+  color: #34475A;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.db-nav-link.dark {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.8s ease;
+}
+
+.db-nav-link.light:hover {
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.8) 40%,
+      #4b60ff58 100%);
+
+  color: #4B60FF;
+}
+
+.db-nav-link-active.light {
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.8) 40%,
+      #4b60ff58 100%);
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #4b60ff2d;
+
+  color: #4B60FF;
+}
+
+.db-nav-link.dark:hover {
+  background: linear-gradient(185deg, #34396F, #131736);
+
+  color: white;
+
+
+}
+
+.db-nav-link-active.dark {
+  background: linear-gradient(185deg, #34396F, #131736);
+
+ border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #4b60ff2d;
+  color: white;
+}
+
+.db-navbar-brand {
+
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+}
+
+.db-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.db-navbar-link.light {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #34475A;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.db-navbar-link.dark {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+.db-right-nav {
+  display: flex;
+  gap: 5rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.db-theme.light {
+  font-size: 24px;
+  color: #34475A;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.db-theme.dark {
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.db-profile-wrap {
+  position: relative;
+}
+
+
+.db-profile-picture {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.db-pro-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.db-profile-btn.light {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 0.1px solid #2d194017;
+  border-radius: 3rem;
+  background-color: white;
+  cursor: pointer;
+  color: #34475A;
+  position: relative;
+}
+
+.db-profile-btn.dark {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 0.1px solid #ffffffc8;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color: #ffffff;
+}
+
+
+.db-dropdown-icon.light {
+  font-size: 1.5rem;
+  color: #34475A;
+  font-weight: 200;
+  transition: all 0.5s ease;
+}
+
+.db-dropdown-icon.dark {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 100;
+  transition: all 0.5s ease;
+}
+
+.db-profile-btn.light:hover {
+
+  background: linear-gradient(90deg, rgba(71, 16, 105, 0.147) 35%, rgba(25, 84, 107, 0.133) 83%);
+  color: #34475A;
+}
+
+.db-profile-btn.dark:hover {
+
+  background: linear-gradient(90deg, #D8B9F2 35%, #B3E5FC 83%);
+  color: #4B60FF;
+}
+
+
+/****** NAVBAR PROFILE DROPDOWN START *********/
+.db-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 3.8rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropdown-link-wrap {
+  width: 100%;
+  border-bottom: 1px solid #2d1940;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.db-dropdown-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #14202C;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.db-dropdown-link:hover {
+  color: #14202C;
+}
+
+.dropdown-link-wrap:hover {
+  background: linear-gradient(90deg, rgba(71, 16, 105, 0.147) 35%, rgba(25, 84, 107, 0.133) 83%);
+  color: #4B60FF;
+}
+
+.db-dropdown-btn {
+  background: none;
+  border: none;
+  color: #2d1940;
+  font-size: 1rem;
+}
+
+
+/****** NAVBAR PROFILE DROPDOWN END *********/
+
+
+/************************************************** NAVBAR END *******************************************************************/
+
+
+.market-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+
+/*********************************************** SPOT MARKET START **************************************************************/
+
+/************ SPOT MARKET LAYOUT START ****************/
+
+.amm-main-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.amm-header {
+  font-size: 1.2rem;
+}
+
+.amm-header.light {
+  color: #14202C;
+
+}
+
+.amm-header.dark {
+  color: white;
+}
+
+
+.amm-left-wrap {
+  width: 20%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  height: max-content;
+}
+
+.amm-left-wrap.light{
+  background-color: white;
+  border: 1px solid #dee2e6;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+}
+
+
+.amm-left-wrap.dark{
+  color: white;
+  background-color: #000528;
+  border: 0.15rem solid #0E1329;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06); 
+    border-radius: 1rem;
+
+}
+
+.amm-right-wrap {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  height: max-content;
+  border-radius: 1rem;
+
+}
+
+.amm-right-wrap.light {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+.amm-right-wrap.dark {
+  color: white;
+  background-color: #000528;
+  border: 0.15rem solid #0E1329;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06); 
+}
+
+
+
+
+
+/************ SPOT MARKET LAYOUT END ****************/
+
+/************ BOT-NAV START ******************************/
+
+.amm-market-header-wrap.light {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}
+
+.amm-market-header-wrap.dark {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #000328;
+  background-color: #000528;
+
+}
+
+
+.db-bot-table-nav-bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+}
+
+
+.db-bot-table-nav-bottom.light {
+  border-bottom: 1px solid #dee2e638;
+}
+
+.db-bot-table-nav-bottom.dark {
+
+  background-color: #000528;
+  border-bottom: 0.1px solid #7ef6f825;
+
+}
+
+
+.db-total-investment {
+  padding: 0;
+  display: flex;
+  align-content: center;
+}
+
+.db-total-inv-p{
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+ 
+}
+
+.db-total-inv-p.light {
+   color: #14202C
+}
+
+.db-total-inv-p.dark {
+  color: white;
+}
+
+
+.db-nav-bottom-btn-wrap {
+  display: flex;
+  gap: 1rem;
+}
+
+.bot-start-msg{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+
+}
+
+.bot-start-msg.light {
+
+  color: #14202C;
+}
+
+.bot-start-msg.dark {
+
+  color: white;
+}
+
+
+
+.bot-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bot-imgg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.db-nav-bottom-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.db-nav-bottom-btn.light {
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.8) 40%,
+      #4b60ff58 100%);
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #4b60ff2d;
+
+  color: #4B60FF;}
+
+
+.db-nav-bottom-btn.light:hover {
+  background: #18276b;
+  color: white;
+
+}
+
+
+
+
+.db-nav-bottom-btn.dark {
+
+  background: linear-gradient(185deg, #34396F, #131736);
+
+ border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #4b60ff2d;
+  color: white;
+
+}
+
+
+.db-nav-bottom-btn.dark:hover {
+
+  background: linear-gradient(90deg, rgba(71, 16, 105, 0.147) 35%, rgba(25, 84, 107, 0.133) 83%);
+  color: white;
+  border: 0.1px solid rgba(255, 255, 255, 0.941);
+
+
+}
+
+
+
+
+/************ BOT-NAV END ******************************/
+
+/*********************************************** SPOT MARKET END **************************************************************/
+
+
+
+/*********************************************** FUTURES MARKET START **************************************************************/
+
+
+/************ FUTURES MARKET LAYOUT START *************/
+
+.f-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  height: max-content;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+  padding: 0 2rem 1rem 2rem;
+
+}
+
+.f-header{
+  padding: 1rem;
+}
+
+.f-header.light {
+  color: #14202C;
+}
+
+.f-header.dark {
+  color: white;
+}
+
+
+.f-right-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 1rem;
+  margin-top: 1rem;
+  height: max-content;
+  align-items: flex-start;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+
+.f-right-wrap.light {
+   border: 1px solid #dee2e6;
+  
+  background-color: white;
+ 
+
+}
+
+.f-right-wrap.dark {
+  
+  
+  color: white;
+  background-color: #0003287f;
+  border: 0.1px solid #7ef6f825;
+
+}
+
+
+
+
+/************ FUTURES MARKET LAYOUT END *************/
+
+
+
+
+
+
+/*********************************************** FUTURES MARKET END **************************************************************/
+
+
+
+/******************** FORM START **********************/
+.db-form-header.light {
+  color: #020101;
+}
+
+.db-form-header.dark {
+  color: white;
+}
+
+
+.platform-form{
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+
+
+
+.platform-form.light {
+  border: 1px solid #dee2e6;
+  
+  
+}
+
+.platform-form.dark {
+  border: 0.1px solid #7ef6f825;
+  }
+
+
+
+
+
+
+.db-platform-selection {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.db-platform-inv-amt {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.investment-label{
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+
+.investment-label.light {
+  color: #020101;
+
+}
+
+.investment-label.dark {
+ 
+  color: white;
+
+}
+
+
+
+.db-platform-inv-input.light {
+  border: none;
+  border-bottom: 0.1px solid #4B60FF;
+  padding: 0.5rem 0;
+  font-weight: 200;
+  font-size: 12px;
+  transition: all 0.1s ease;
+  width: 400px;
+  background-color: #f9f9f9;
+  color: #020101;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  appearance: none;
+  outline: none;
+}
+
+.db-platform-inv-input.light:focus {
+  border-bottom: 2px solid #4B60FF;
+  font-size: 14.1px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(83, 38, 141, 0.2);
+}
+
+.db-platform-inv-input.light:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+
+}
+
+
+
+.db-platform-inv-input.dark {
+  border: none;
+  border: 0.15rem solid #12172e;
+  padding: 0.5rem 0;
+  font-weight: 200;
+  font-size: 12px;
+  transition: all 0.1s ease;
+  width: 400px;
+  background-color: #080d23;;
+  color: white;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  appearance: none;
+  outline: none;
+}
+
+.db-platform-inv-input.dark:focus {
+  border-bottom: 2px solid #12172e;
+  font-size: 14.1px;
+  background-color: #1A2430;
+  box-shadow: 0 0 5px #13132a;
+}
+
+.db-platform-inv-input.dark:hover {
+  background-color: #0d1233;
+  cursor: pointer;
+
+}
+
+
+
+.db-platform-select-input.light {
+  border: none;
+  border-bottom: 0.1px solid #4B60FF;
+  padding: 0.5rem 0;
+  font-weight: 200;
+  font-size: 12px;
+  transition: all 0.1s ease;
+  width: 400px;
+  background-color: #f9f9f9;
+  color: #020101;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  appearance: none;
+  outline: none;
+}
+
+.db-platform-select-input.light:focus {
+  border-bottom: 2px solid #4B60FF;
+  font-size: 14.1px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(83, 38, 141, 0.2);
+
+}
+
+.db-platform-select-input.light:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.db-platform-select-input.light::placeholder {
+  color: #aaa;
+}
+
+.db-platform-select-input.dark {
+  border: none;
+  border: 0.1px solid #12172e;
+  padding: 0.5rem 0;
+  font-weight: 200;
+  font-size: 12px;
+  transition: all 0.1s ease;
+  width: 400px;
+  background-color: #080d23;
+  color: white;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  appearance: none;
+  outline: none;
+}
+
+.db-platform-select-input.dark:focus {
+  border-bottom: 2px solid #12172e;
+  font-size: 14.1px;
+  background-color: #080d23;
+  box-shadow: 0 0 5px #13132a;
+}
+
+.db-platform-select-input.dark:hover {
+  background-color: #0d1233;
+  cursor: pointer;
+}
+
+.db-platform-select-input.dark::placeholder {
+  color: #aaa;
+}
+
+
+.platform-label.light {
+  font-size: 14px;
+  font-weight: 400;
+  color: #020101;
+  margin-bottom: 0.5rem;
+}
+
+.platform-label.dark {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.platform-submit-btn.light {
+  
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  
+  border-radius: 1rem;
+  border: none;
+  background: linear-gradient(to bottom,
+  rgba(255, 255, 255, 0.8) 40%,
+  #4b60ff58 100%);
+border-width: 0 1px 1px 1px;
+border-style: solid;
+border-color: #4b60ff2d;
+
+color: #4B60FF;}
+
+
+
+
+.platform-submit-btn.light:hover {
+
+  background: #18276b;
+  color: white;
+
+}
+
+
+.platform-submit-btn.dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background: linear-gradient(185deg, #34396F, #131736);
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #4b60ff2d;
+  color: white;
+
+
+}
+
+
+.platform-submit-btn.dark:hover {
+
+  background: linear-gradient(90deg, rgba(71, 16, 105, 0.147) 35%, rgba(25, 84, 107, 0.133) 83%);
+  color: white;
+  border: 0.1px solid rgba(255, 255, 255, 0.941);
+
+}
+
+
+
+
+/******************** FORM END **********************/
+
+/*******************BALANCE CARD START **************/
+
+
+
+/* balance */
+.balance-wrap.light {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 0.1px solid #2d194017;
+  background-color: white;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+
+}
+
+.balance-wrap.light>*:nth-child(1) {
+  font-size: 1.2rem;
+  /* Font size for the first child */
+  color: #14202C;
+  margin-left: 0.5rem;
+}
+
+.balance-wrap.light>*:nth-child(2) {
+  font-size: 0.9rem;
+  /* Font size for the second child */
+  color: #14202C;
+  margin-left: 0.5rem;
+}
+
+.balance-wrap.light>*:nth-child(3) {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  /* Flex row for the third child */
+  justify-content: space-between;
+  /* Justify content */
+  align-items: center;
+  /* Align items vertically */
+  color: #14202C;
+  margin: 0 0.5rem;
+}
+
+
+
+.balance-wrap.dark {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem;
+  background: #FEAC5E;
+  background: -webkit-linear-gradient(145deg, #4BC0C8, #C779D0);
+  
+  background: linear-gradient(145deg, #4BC0C8, #C779D0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.balance-wrap.dark>*:nth-child(1) {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.balance-wrap.dark>*:nth-child(2) {
+  font-size: 0.9rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.balance-wrap.dark>*:nth-child(3) {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 0.5rem;
+}
+
+
+
+
+.balance-raise.light {
+
+  padding: 0.4rem 0.8rem;
+  background-color: #47af472f;
+  border-radius: 5rem;
+  color: #47af47;
+  border: 0.1px solid #47af47;
+  font-weight: 500;
+}
+
+.balance-raise.dark {
+
+  padding: 0.4rem 0.8rem;
+  background-color: #f4edf43e;
+  border-radius: 5rem;
+  color: rgb(248, 247, 247);
+  border: 0.1px solid #ffffff5b;
+  font-weight: 800;
+}
+
+.balance.light h2 {
+  font-size: 32px;
+  color: #14202C;
+}
+
+.balance.dark h2 {
+  font-size: 32px;
+}
+
+
+/********* Balance2 *************/
+.balance2-wrap.light {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 0.1px solid #2d194017;
+  background-color: white;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+
+}
+
+.balance2-wrap.light>*:nth-child(1) {
+  font-size: 1.2rem;
+  /* Font size for the first child */
+  color: #14202C;
+  margin-left: 0.5rem;
+}
+
+.balance2-wrap.light>*:nth-child(2) {
+  font-size: 0.9rem;
+  /* Font size for the second child */
+  color: #14202C;
+  margin-left: 0.5rem;
+}
+
+.balance2-wrap.light>*:nth-child(3) {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  /* Flex row for the third child */
+  justify-content: space-between;
+  /* Justify content */
+  align-items: center;
+  /* Align items vertically */
+  color: #14202C;
+  margin: 0 0.5rem;
+}
+
+
+
+.balance2-wrap.dark {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem;
+  background: #FEAC5E;
+  background: -webkit-linear-gradient(145deg, #4BC0C8, #C779D0);
+  
+  background: linear-gradient(145deg, #4BC0C8, #C779D0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.balance2-wrap.dark>*:nth-child(1) {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.balance2-wrap.dark>*:nth-child(2) {
+  font-size: 0.9rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.balance2-wrap.dark>*:nth-child(3) {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 0.5rem;
+}
+
+
+
+
+.balance2-raise.light {
+
+  padding: 0.4rem 0.8rem;
+  background-color: #47af472f;
+  border-radius: 5rem;
+  color: #47af47;
+  border: 0.1px solid #47af47;
+  font-weight: 500;
+}
+
+.balance2-raise.dark {
+
+  padding: 0.4rem 0.8rem;
+  background-color: #f4edf43e;
+  border-radius: 5rem;
+  color: rgb(248, 247, 247);
+  border: 0.1px solid #ffffff5b;
+  font-weight: 800;
+}
+
+.balance2.light h2 {
+  font-size: 32px;
+  color: #14202C;
+}
+
+.balance2.dark h2 {
+  font-size: 32px;
+}
+
+
+/********* Balance2 *************/
+
+
+
+
+
+/*******************BALANCE CARD END **************/
+
+/****************** COINS TABLE *****************/
+
+.coins-table-container.light {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.coins-table-container.dark {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #727892
+}
+
+
+.coinTable-amm{
+  width: 100%;
+}
+/*************** COINS TABLE END *****************/
+
+
+/**************** PLATFORM DROPDOWN START****************/
+
+.platform-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.platform-dropdown-toggle.light {
+  padding: 10px 15px;
+  background-color: white;
+  
+  color: #020101;
+  border: 0.05rem solid #6f70703d;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 250px;
+  text-align: start;
+
+}
+
+
+.platform-dropdown-toggle.dark {
+  padding: 10px 15px;
+  background-color: #080D23;
+  color: #fff;
+  border: 0.15rem solid #212a54;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 250px;
+  text-align: start;
+
+}
+
+
+
+.platform-dropdown-toggle.db.light {
+  padding: 10px 15px;
+  background-color: white;
+  color: #020101;
+  border: 0.05rem solid #6f70703d;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 150px;
+  text-align: center;
+
+}
+
+.platform-dropdown-toggle.db.dark {
+  padding: 10px 15px;
+  background-color: #080D23;
+  color: #fff;
+  border: 0.05rem solid #212a54;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 150px;
+  text-align: center;
+
+}
+
+.platform-dropdown-toggle.dark:hover {
+  background-color: #1A2430;
+  color: white;
+}
+
+.platform-dropdown-menu.light {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #000328;
+  border: 1px solid #f2f3f622;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 250px;
+  margin-top: 5px;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.platform-dropdown-menu.dark {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #080D23;
+  border: 1px solid #12172e;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 250px;
+  margin-top: 5px;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.platform-dropdown-menu.db.light {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #f2f3f622;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 150px;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+
+}
+
+.platform-dropdown-menu.db.dark {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #080D23;
+  border: 1px solid #12172e;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 150px;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.platform-dropdown-item.dark {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #faf5f5;
+  font-size: 14px;
+  border-bottom: 0.05rem solid #faf5f520;
+}
+
+.platform-dropdown-item.dark.active {
+  background-color: #1A2430;
+  color: #fff;
+}
+
+.platform-dropdown-item.dark:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.platform-dropdown-item.light {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #4B60FF;
+  font-size: 14px;
+  border-bottom: 0.05rem solid #faf5f520;
+}
+
+.platform-dropdown-item.light.active {
+  background-color: #1A2430;
+  color: #fff;
+}
+
+.platform-dropdown-item.light:hover {
+  background: linear-gradient(90deg, rgba(71, 16, 105, 0.147) 35%, rgba(25, 84, 107, 0.133) 83%);
+  color: #000328;
+}
+
+
+/**************** PLATFORM DROPDOWN END****************/
+
+
+/************************************************ DASHBOARD END *****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bot-img.db {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+.bot-components {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+}
+
+.platform-links-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.platform-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+
+/* Dropdown menu container */
+
+

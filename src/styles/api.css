@@ -1,0 +1,124 @@
+.api-page.light{
+ width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  color: #14202c;
+
+}
+
+.api-page.dark{
+  
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+.documentation-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+
+
+
+
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  
+  }
+  
+  .platform-selection {
+    margin: 20px 0;
+  }
+  
+  .platform-selection select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  
+  .api-docs {
+    width: 60%;
+  }
+  
+  .doc-content.light {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .doc-content.dark {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  
+  .api-keys {
+    margin: 20px 0;
+    
+  }
+  
+  .api-keys label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .api-keys input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .api-keys button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4d60fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .api-keys button:hover {
+    background-color: #45a049;
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f5e7;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
+  a{
+    text-decoration: none;
+    color: #8e8f8f;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: #717fef;
+  }

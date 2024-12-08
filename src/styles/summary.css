@@ -1,0 +1,75 @@
+.investment-summary-card.light {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+    
+  }
+
+  .investment-summary-card.dark {
+    border: 1px solid #dddddd4a;
+    border-radius: 1rem;
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    
+  }
+  
+  .investment-summary-card.light h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2d1940;
+  }
+
+  .investment-summary-card.dark h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .summary-item.light {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .summary-item.dark {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .summary-item.light span:last-child {
+    font-weight: bold;
+  }
+
+  .summary-item.dark span:last-child {
+    font-weight: bold;
+  }
+  
+
+  .summary-items-wrap.light{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: flex-end;
+  }
+
+  .summary-items-wrap.dark{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: flex-end;
+  }

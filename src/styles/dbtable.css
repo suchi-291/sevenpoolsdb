@@ -1,0 +1,127 @@
+.dsb-bot-table-wrap.light{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;    
+
+}
+
+.dsb-bot-table-wrap.dark{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;    
+
+
+}
+
+.dsb-bot-table.light{
+    width: 100%;
+    border-collapse: collapse; 
+
+}
+
+.dsb-bot-table.dark{
+    width: 100%;
+    border-collapse: collapse; 
+
+}
+.dsb-bot-table-head.light {
+    border: none; 
+    border-top: 1px solid #34475a29;
+    border-bottom: 1px solid #34475a29; 
+    color: rgba(0, 0, 0, 0.547);
+    width: 100%;
+}
+
+.dsb-bot-table-head.dark {
+    border: none; 
+    border-top: 1px solid #34475a29;
+    border-bottom: 1px solid #34475a29; 
+    color: #fff;
+    width: 100%;
+    background-color: #0D1227;
+}
+
+.dsb-bot-table-head.light th{
+    padding: 1rem;
+}
+
+
+.dsb-bot-table-head.dark th{
+    padding: 1rem;
+}
+
+.dsb-bot-table-body{
+    width: 100%;
+    
+}
+
+.dsb-row-wrap{
+    width: 100%;
+}
+
+.dsb-bot-table-body.light{
+    width: 100%;
+}
+
+
+.dsb-bot-table-body.dark{
+    width: 100%;
+}
+
+.dsb-bot-item-wrap {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 100%; 
+    padding: 0.5rem; 
+    font-size: 14px; 
+}
+
+.dsb-row-wrap {
+    height: 70px; 
+    border-bottom: 0.5px solid #34475a29;
+}
+
+
+.dsb-view-all-btn.light{
+    background-color: none;
+    border: none;
+    text-decoration: none;
+    color: #4B60FF;;
+}
+
+
+.dsb-view-all-btn.light:hover{
+    background: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 0.8) 40%, 
+  #4b60ff58 100%);
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #4b60ff2d;
+    border-radius: 1rem;
+    color: #4B60FF;
+    padding: 0.5rem;
+
+
+}
+
+.dsb-view-all-btn.dark{
+    background-color: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
